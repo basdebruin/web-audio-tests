@@ -1,0 +1,105 @@
+// simple web audio test styles
+// bas de bruin
+
+$color: #333;
+$background: #eee;
+
+:root {
+    font-size: 18px;
+}
+
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 2rem 0;
+    background: $background;
+    color: $color;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+
+
+    * {
+        box-sizing: border-box;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+input, button {
+    outline: none;
+}
+
+button {
+    //display: block;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: solid $color 2px;
+    background: $color;
+    color: $background;
+    margin: 2rem 0;
+
+    opacity: 0.8;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 1;
+    }
+    &:active {
+        opacity: 0.5;
+    }
+}
+
+.slider {
+    appearance: none;
+    -webkit-appearance: none;
+    //
+    width: 100%;
+    height: 0.5rem;
+    background: $color;
+    opacity: 0.8;
+    border: solid $color 2px;
+    border-radius: 10px;
+
+    transition: all .2s;
+
+    &::-webkit-slider-thumb {
+        appearance: none;
+        -webkit-appearance: none;
+        //
+        border-radius: 5px;
+        background: $background;
+        border: solid $color 2px;
+        width: 1.5rem;
+        height: 1.5rem;
+
+        cursor: pointer;
+        &:active {
+            cursor: grabbing;
+        }
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+label {
+    display: block;
+    opacity: 0.5;
+    margin: 0.5rem 0 1rem 0;
+}
+
+a {
+    &:hover {
+        opacity: 0.7;
+    }
+}

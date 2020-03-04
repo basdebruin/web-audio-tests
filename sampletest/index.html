@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>title</title>
+</head>
+
+<style type="text/css">
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<body>
+    <section class="container">
+
+        <h1>Raw Sample Buffer Values</h1>
+        <p>Using Web AudioContext</p>
+
+        <button onclick="start()">Start</button>
+        <button onclick="stop()">Stop</button>
+
+        <p>Just writes random noise to buffer right now</p>
+        <p>
+            Based on code from source:<br>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer">https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer</a>
+        </p>
+
+        <br>
+
+        <label>A demo by Bas de Bruin</label>
+
+    </section>
+</body>
+
+<script src="sketch.js"></script>
+
+</html>

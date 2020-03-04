@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <script src="../lib/flocking/flocking-all.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>title</title>
+</head>
+
+<style type="text/css">
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<body>
+    <section class="container">
+
+        <h1>Flocking test</h1>
+        <p>With some buttons.</p>
+
+        <button onclick="start()">Start</button>
+        <button onclick="stop()">Stop</button>
+
+        <input type="range" min="1" max="1000" value="100" class="slider" id="slider01">
+        <label id="label01" for="slider02">100</label>
+
+        <input type="range" min="10" max="30000" value="100" class="slider" id="slider02">
+        <label id="label02" for="slider02">100</label>
+
+        <input type="range" min="10" max="20000" value="2000" class="slider" id="slider03">
+        <label id="label03" for="slider03">100</label>
+
+    </section>
+</body>
+
+<script src="sketch.js"></script>
+
+</html>
